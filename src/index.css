@@ -31,7 +31,11 @@ body {
   @apply border-2 border-green-500
 }
 .card {
-  @apply max-w-32 border-2 border-red-600 flex
+  @apply border-2 border-red-600 flex
+}
+
+.container {
+  @apply m-3 p-4
 }
 
 
