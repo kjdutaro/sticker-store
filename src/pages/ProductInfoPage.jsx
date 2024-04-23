@@ -1,9 +1,11 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 
-export default function ProductInfo() {
+export default function ProductInfoPage() {
   const params = useParams();
-  console.log(params)
+  console.log(params);
   return (
-    <div>Product No. {params.id}</div>
-  )
+    <div>
+      <h1>Product INFO No. {params.productID}</h1>
+    </div>
+  );
 }

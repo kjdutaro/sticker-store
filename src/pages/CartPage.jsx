@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function CartPage() {
-  const products = [1, 2, 3, 4];
+  const cart_products = [1, 2, 3, 4];
   return (
-    <div>
-      {products.map((product) => (
-        <Link key={product} to={`/carts/${product}`}>
-          Product No. {product}
+    <div className="flex flex-col gap-2">
+      {cart_products.map((cart_productID) => (
+        <Link key={cart_productID} to={`/cart/${cart_productID}`}>
+          Cart Product No. {cart_productID}
         </Link>
       ))}
+
+      <Outlet />
     </div>
   );
 }

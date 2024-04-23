@@ -1,10 +1,9 @@
-import { LoginContainer } from "../components";
-
+import { Link } from "react-router-dom"
 
 function HomePage() {
   return (
     <>
-      <LoginContainer></LoginContainer>
+      <Link to={'/cart'}>to cart</Link>
     </>
   )
 }

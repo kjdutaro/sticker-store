@@ -6,24 +6,34 @@ import HomePage from './pages/HomePage';
 import NotFoundPage from "./pages/NotFoundPage";
 import CartPage from "./pages/CartPage";
 import ProductInfoPage from "./pages/ProductInfoPage";
+
+
+
 import "./index.css";
+
 
 
 const router = createBrowserRouter([
   {
-    path: '/Home',
+    path: '/',
     element: <HomePage />,
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: '/Home/:id',
+        path: './:productID',
         element: <ProductInfoPage />
       }
     ]
   },
   {
     path: '/cart',
-    element: <CartPage />
+    element: <CartPage />,
+    children: [
+      {
+        path: '/cart/:productID',
+        element: <ProductInfoPage />
+      }
+    ]
   },
 
 ])
