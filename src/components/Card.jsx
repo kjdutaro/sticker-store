@@ -7,8 +7,8 @@ export const Card = () => {
         <img className="rounded-lg border-4 border-b-slate-600S" src={sample} alt="image" />
       </div>
       <div className=" flex-auto space-y-4 min-w-60">
-        <h1 className=" text-4xl font-heading">Description</h1>
-        <h2 className=" text-2xl font-body">Price</h2>
+        <h1>Description</h1>
+        <h2>Price</h2>
         <div className=" flex justify-end">
           <div className="flex space-x-3 border-4 rounded-lg m-2 px-2 py-1 border-gray-300">
             <button>
